@@ -415,11 +415,11 @@ void irecv_usage(void) {
 	printf("\t-k [payload]\t\tsend usb exploit and payload.\n");
 	printf("\t-s [logfile]\t\tstarts a shell, and log output.\n");
 	printf("\t-l <file> \t\tsend a set of commands from a file (1 per line).");
-	printf("\t-x21\t\t\tSend raw CMD to 0x21.\n");
-	printf("\t-x40\t\t\tSend raw CMD to 0x40.\n");
-	printf("\t-xA1\t\t\tSend raw CMD to 0xA1.\n");
-    printf("\t-r\t\t\treset usb.\n\n");
-}
+        printf("\t-r\t\t\treset usb.\n\n");
+	printf("\t-x21 <cmd>\t\t\tSend raw CMD to 0x21.\n");
+	printf("\t-x40 <cmd>\t\t\tSend raw CMD to 0x40.\n");
+	printf("\t-xA1 <cmd>\t\t\tSend raw CMD to 0xA1.\n");
+    }
 
 int main(int argc, char *argv[]) {
 	printf("iRecovery - Recovery Utility\n");
