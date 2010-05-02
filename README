@@ -13,8 +13,8 @@ It currently connects to 0x1281 (iPhone, iPhone 3G, iPod touch, iPod touch 2G: R
 	./iRecovery -r 			usb reset.
 	./iRecovery -f <file>		uploads a file.
 	./iRecovery -c "command"	send a single command.
-	./iRecovery -k 			send USB exploit.
-	============SHELL CMDS============
-	/upload 			send a file in a shell.
-	/exploit			send USB exploit in a shell.
-	/exit				Exit the shell.
+	./iRecovery -l <file>		sends a set of commands from a file (one per line).
+	./iRecovery -x21 <cmd>     send a raw command to 0x21
+	./iRecovery -x40 <cmd>     send a raw command to 0x40
+	./iRecovery -xA1 <cmd>     send a raw command to 0xA1
+
