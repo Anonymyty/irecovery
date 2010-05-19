@@ -342,8 +342,8 @@ int device_sendrawusb0x21(char *command) {
 void prog_usage() {
 	
 	printf("./irecovery [args]\n");
-	printf("\t-a\t\tenables auto-boot and reboots the device (exit recovery loop).\r\n");
-	printf("\t-arm7\t\t\tSend the 2.1.1 iPod 2G Arm7_Go Exploit.\r\n");
+	printf("\t-a\t\tenables auto-boot and reboots the device (exit loop).\r\n");
+	printf("\t-arm7\t\tSend the 2.1.1 iPod 2G Arm7_Go Exploit.\r\n");
 	printf("\t-b <file>\truns batch commands from a file(one per line).\r\n");
 	printf("\t-c \"command\"\tsend a single command.\r\n");
 	printf("\t-e <file>\tupload a file then run usb exploit.\r\n");
@@ -355,14 +355,15 @@ void prog_usage() {
 	printf("\t-x40 <command>\tsend a raw command to 0x41.\r\n");
 	printf("\t-xA1 <command>\tsend a raw command to 0xA1.\r\n");
 	printf("\r\n");
-	printf("== Console / Batch Commands ==\r\n");
+	printf("\t== Console / Batch Commands ==\r\n");
 	printf("\r\n");
-        printf("\t/arm7\t\t\tSend the 2.1.1 iPod 2G Arm7_Go Exploit.\r\n");
-        printf("\t/auto-boot\tenables auto-boot and reboots the device (exit recovery loop).\r\n");
+	printf("\t/arm7\t\tSend the 2.1.1 iPod 2G Arm7_Go Exploit.\r\n");
+        printf("\t/auto-boot\tsets auto-boot and reboots the device (exit loop).\r\n");
 	printf("\t/batch   <file>\texecute commands from a batch file.\r\n");
 	printf("\t/exit\t\texit the recovery console.\r\n");
 	printf("\t/exploit <file>\tupload a file then execute the usb exploit.\r\n");
 	printf("\t/upload  <file>\tupload a file to the device.\r\n");
+	printf("\r\n");
 }
 void prog_init() {
 	
